@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+        Cineland Cinemas Survey Page
+      Author: Chiranjeev Bhandari
+      Date: 02/12/16
+     Filename: survey.html
+
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Customer Survey</title>
+       <link href="Survey.css" rel="stylesheet" />
+
+   </head>
+
+   <body>
+       <a href="MovieTheater.html">&#8592;Back to Home Page</a>       
+      <header>
+         <article>
+            <h1> Survey</h1>     
+         </article>
+          <nav>
+     
+          </nav>
+      </header>
+
+   <section>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <form id="survey" name="survey" method="post" action="NotSet">
+
+        <fieldset id="custInfo">
+          <legend>Customer Information</legend>
+
+          <label for="custname">Name *</label>
+          <input  type="text" name="custname" id="custname" placeholder="first and last name" 
+              autofocus="autofocus" required="required" />
+
+          <label for="phone">Phone number</label>
+          <input name="phone" id="phone" placeholder="(nnn-)nnn-nnnn" type="text" 
+              pattern="^(\d{3}-)?\d{3}-\d{4}$" title="123-456-7890 or 123-4567" />
+
+          <label for="email">E-mail</label>
+          <input name="email" id="email" type="email" />
+
+            <label for="visitdate">Date of visit</label>
+            <input name="visitdate" id="visitdate" type="text" placeholder="mm-dd-yyyy" />
+
+            <label for="MovieWatched">Movie Watched</label>
+            <select name="MovieWatched" id="MovieWatched">
+                <option value="type1">Airlift</option>
+                <option value="type2">Avengers- Age of Ultrons</option>
+                <option value="type3" selected="selected">Zoolander2</option>
+                <option value="type4">Bahubali</option>
+                <option value="type5">DeadPool</option>
+                <option value="type6">Fast 7</option>
+                <option value="type6">Hera Pheri</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset id="experience">
+          <legend>Share Your Experience </legend>
+            <!--date format-->
+          
+
+       
+
+            <!--drop down-->
+
+          <label>Was there Cleanliness in theater?</label>
+          <!--raido button-->
+          <fieldset class="optionGroup">
+            <label for="sYes">Yes</label>
+            <input type="radio" name="serviceFriendly"checked="checked" id="sYes" value="yes" />
+
+            <label for="sNo">No</label>
+            <input type="radio" name="serviceFriendly" id="sNo" value="no" />
+          </fieldset>
+
+          <label>How was the sound Quality</label>
+          
+          <fieldset class="optionGroup">
+            <label for="oYes">Poor</label>
+            <input type="radio" name="orderCorrect" id="oYes" value="yes" />
+
+            <label for="oNo">Ok</label>
+            <input type="radio" name="orderCorrect" id="oNo" value="no" />
+              <label for="oNo">Good</label>
+              <input type="radio" name="orderCorrect" id="oNo" value="no" />
+
+          </fieldset>
+
+            <label>How was the Picture Quality</label>
+
+            <fieldset class="optionGroup">
+                <label for="oYes">Poor</label>
+                <input type="radio" name="orderCorrect" id="oYes" value="yes" />
+
+                <label for="oNo">Ok</label>
+                <input type="radio" name="orderCorrect" id="oNo" value="no" />
+                <label for="oNo">Good</label>
+                <input type="radio" name="orderCorrect" id="oNo" value="no" />
+            </fieldset>
+
+          <label>Rate the overall Expirience <br />
+                  (0 = poor; 10 = great)
+          </label>
+          <label class="sliderLabel">0</label>
+          <input name="service" id="service" type="range" value="5" min="0" max="10" step="1" />
+          <label class="sliderLabel">10</label>
+
+          <label for="comments">Tell us more about your experience!</label>
+          <textarea name="comments" id="comments"></textarea>
+
+        </fieldset>
+
+        <label id="newsletter">
+          <input type="checkbox" name="newscb" value="yes" />
+          E-mail me about Special Offers and Discounts!
+        </label>
+
+        <p>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Cancel"  />
+        </p>
+              
+      </form>
+   </section>
+
+   <footer>
+      <address>
+          &#9836 &#9835 &#9834 Developed By: Chiranjeev Bhandari &#9834 &#9835 &#9836
+      </address>
+   </footer>
+
+   </body>
+
+</html>
